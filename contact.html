@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - My Website</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Custom CSS for centering the title and form */
+        .contact-form {
+            max-width: 600px; /* Adjust width as needed */
+            margin: 0 auto; /* Centers the form horizontally */
+        }
+
+        .contact-form textarea {
+            height: 150px; /* Set a default height for the textarea */
+        }
+
+        .form-container {
+            text-align: center; /* Center-aligns the title and form */
+        }
+
+        .form-container h1 {
+            margin-bottom: 30px; /* Adds space below the title */
+        }
+
+        footer {
+            background-color: #007bff; /* Primary color */
+            color: white;
+        }
+
+        /* Footer social media icons */
+        .footer-social-icons a {
+            color: white;
+            font-size: 24px;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .footer-social-icons a:hover {
+            color: #ffd700; /* Change color on hover */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-primary sticky-top">
+        <div class="container">
+            <a class="navbar-brand text-white" href="index.html">My Website</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link text-white">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link text-white">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="services.html" class="nav-link text-white">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link text-white">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-5 form-container">
+        <h1>Contact Us</h1>
+        <form id="contactForm" class="contact-form bg-primary p-4 rounded">
+            <div class="form-group">
+                <label for="name" class="text-white">Name:</label>
+                <input type="text" id="name" name="name" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="text-white">Email:</label>
+                <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="text-white">Message:</label>
+                <textarea id="message" name="message" class="form-control" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-warning text-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3 mt-5">
+        <p>&copy; 2024 My Website. All rights reserved.</p>
+        <p>Follow us on 
+            <a href="https://www.linkedin.com" class="text-white footer-social-icons" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>, 
+            <a href="https://www.youtube.com" class="text-white footer-social-icons" target="_blank" title="YouTube"><i class="fab fa-youtube"></i></a>, and 
+            <a href="https://www.instagram.com" class="text-white footer-social-icons" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>.
+        </p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
